@@ -1,0 +1,64 @@
+{
+"id":293
+,"name":"JC_DEMO_PROD"
+,"description":"Health checks modified"
+,"status":"Active"
+,"type":"HEALTHCHECK"
+,"group":"IA_JC_DEV_USER"
+,"strategy":"HOST"
+,"sendNotification":"N"
+,"workflow_notification_details":[
+]
+,"enable_blast_radius":"N"
+,"stepFailed":"Stop at Failed Step"
+,"createdBy":"ASHOK.DONEPUDI@ORACLE.COM"
+,"createdDate":"14-JUN-22 07.19.29.745767 PM"
+,"updatedBy":"ASHOK.DONEPUDI@ORACLE.COM"
+,"lastUpdatedDate":"27-JUN-22 11.16.33.608644 AM"
+,"hasNestedWf":"N"
+,"risk":"Low"
+,"workflowSteps":[
+{
+"id":1767
+,"description":"health check"
+,"seq":1
+,"type":"shellscript"
+,"command":"uptime"
+,"stepFor":"HOST"
+,"runTarget":"HOST"
+,"runAs":"root"
+,"nestedwfName":"N\/A"
+,"estCompletionTime":0
+,"continueOnFailure":"N"
+,"stepTimeout":0
+,"createdBy":"ASHOK.DONEPUDI@ORACLE.COM"
+,"createdDate":"27-JUN-22 11.16.33.605055 AM"
+,"updatedBy":"ASHOK.DONEPUDI@ORACLE.COM"
+,"updatedDate":"27-JUN-22 11.16.33.605060 AM"
+,"step_failure_options":[
+]
+,"metrics":[
+]
+}
+]
+,"throttle_options":[
+]
+,"variables":[
+{
+"name":"INPUT"
+,"description":"Demo imput"
+,"type":"INPUT_VARIABLE"
+,"required":"N"
+,"multiselect":"N"
+,"multival":"N"
+,"source":"N"
+,"sequence":1
+,"createdBy":"ASHOK.DONEPUDI@ORACLE.COM"
+,"createdDate":"27-JUN-22 11.16.33.608362 AM"
+,"updatedBy":"ASHOK.DONEPUDI@ORACLE.COM"
+,"updatedDate":"27-JUN-22 11.16.33.608367 AM"
+}
+]
+,"webhooks":[
+]
+}
